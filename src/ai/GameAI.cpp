@@ -121,7 +121,7 @@ int GameAI::minimax(const GameBoard& board, int depth, int alpha, int beta, bool
                 alpha = std::max(alpha, score);
                 if (alpha >= beta) {
                     delete tempBoard;
-                    return maxScore; // Beta cutoff
+                    return maxScore;
                 }
             }
         }
